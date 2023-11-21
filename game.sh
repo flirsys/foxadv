@@ -64,13 +64,14 @@ while true; do
         done
     done
 
-    bar_top=$bar"\nFOXFung | Ваши деньги: $money \n$bar"
+    bar_top=$bar"\nFOXadv | Ваши деньги: $money \n$bar"
     clear
     echo -e $bar_top
     if [ $main == 0 ]; then
         echo -e $byff_map
         echo -e $bar
         echo -e "p_yx(${player[0]} ${player[1]}) l_x(${n_x} ${e_x}) l_y(${n_y} ${e_y})"
+        echo -e "Управления (WASD)"
         read -n1 input; case $input in
             "p") ((money+=click));;
             "w") p_m_w;;
