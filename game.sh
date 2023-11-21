@@ -71,7 +71,7 @@ while true; do
         echo -e $byff_map
         echo -e $bar
         echo -e "p_yx(${player[0]} ${player[1]}) l_x(${n_x} ${e_x}) l_y(${n_y} ${e_y})"
-        echo -e "Управления (WASD)"
+        echo -e "Управление (WASD)"
         read -n1 input; case $input in
             "p") ((money+=click));;
             "w") p_m_w;;
